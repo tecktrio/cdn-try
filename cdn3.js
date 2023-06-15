@@ -1,4 +1,3 @@
-<script>
      function playAudio(text){
                 let utternance = new SpeechSynthesisUtterance(text)
                 console.log('speaking',text)
@@ -6,4 +5,3 @@
                 console.log('done');
                 
              }
-</script>
