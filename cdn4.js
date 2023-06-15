@@ -1,10 +1,9 @@
+    direction = 'right'
+    speed='50'
+    position='fixed'
+    size='100px'
+    width='100vw'
+    media_url='https://webstockreview.net/images/clipart-dinosaur-dinosaur-extinction-18.gif'
      window.onload = function(){
-              <!-- cotrol bot -->
-               let div = document.getElementById("mgif")
-               div.innerHtml = "<div style="position: fixed;width: 100vw;bottom: 0;z-index: 50;"> 
-                                   <marquee direction="right" scrollamount="10">
-                                   <img src="https://webstockreview.net/images/clipart-dinosaur-dinosaur-extinction-18.gif" width="200px">
-                                   </marquee>
-                                   </div>"
-              
+               document.getElementById("mgif").innerHTML = `<div style="position: ${position};width:${width};z-index: 1000;"><marquee direction=${direction} scrollamount=${speed}><img src=${media_url} width=${size}></marquee></div>`
              }
